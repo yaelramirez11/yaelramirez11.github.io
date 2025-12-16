@@ -28,4 +28,4 @@ Incluye:
 - Aplicación de mejores prácticas de desarrollo frontend moderno
 
 🔗 **Demo en GitHub Pages:**  
-https://TU_USUARIO.github.io/TU_REPOSITORIO/
+https://yaelramirez11.github.io
