@@ -20,6 +20,7 @@
 .sub-subtitle {
   font-size: 25px;
   color: beige;
+  font-weight: 700;
 }
 
 .biography,
@@ -29,6 +30,15 @@
   text-decoration: none;
   color: inherit;
   color: beige;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 .link {
@@ -43,8 +53,8 @@
 
 .gallery-images {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
   gap: 1rem;
   width: 1100px;
   margin: 0 auto;
