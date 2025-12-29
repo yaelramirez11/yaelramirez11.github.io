@@ -1,35 +1,44 @@
-.body {
+.body,
+.html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0px 100px 50px 100px;
-  background-color: rgb(33, 1, 17);
+  background-color: #13161c;
   line-height: 1.5;
+  height: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .titles {
-  font-size: 40px;
-  color: beige;
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 0px;
 }
 
 .subtitles {
-  font-size: 30px;
-  color: beige;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 .sub-subtitle {
-  font-size: 25px;
-  color: beige;
+  font-size: 17px;
+  color: #ffffff;
   font-weight: 700;
 }
 
 .biography,
 .link,
 .text {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
-  color: inherit;
-  color: beige;
+  color: #c4c8ce;
 }
 
 .description {
@@ -37,18 +46,14 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1, 1fr);
   gap: 1rem;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .link {
   font-weight: 700;
-  color: beige;
-}
-
-.image {
-  max-width: 100%;
-  max-height: 100%;
+  color: #22d3ee;
 }
 
 .gallery-images {
@@ -56,22 +61,39 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(1, 1fr);
   gap: 1rem;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .image {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
 .image-vertical {
   grid-row: span 2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .description {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .image-vertical {
+    grid-row: auto;
+  }
+  .gallery-images {
+    grid-template-columns: 1fr;
+  }
 }
